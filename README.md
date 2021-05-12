@@ -1,2 +1,16 @@
 # bot-discord-basic
-This is a simple discord bot written in JavaScript, it was created in minutes
+
+# Features:
+
+Commands Bot
+
+- `-ip` -> IP server.
+- `-support` -> Info support
+- `-forum` -> Show Forums
+- `-website` -> Show website
+- `-developer` -> Show developer
+
+# Installation
+
+This bot runs on [node.js](https://nodejs.org).
+
