@@ -14,4 +14,8 @@ Commands Bot
 
 This bot runs on [node.js](https://nodejs.org).
 
-Run this command on Node.js command prompt `npm i`
+Run this command on Node.js command prompt `npm i discord.js`
+
+# Run BOT
+
+Put this command in a Node.js terminal `node index.js` or `node .`
