@@ -14,3 +14,4 @@ Commands Bot
 
 This bot runs on [node.js](https://nodejs.org).
 
+Run this command on Node.js command prompt `npm i`
