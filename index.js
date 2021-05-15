@@ -9,8 +9,17 @@ client.on("ready", () => {
 
 var prefix = config.prefix;
 
+// Commands
+var ip = ip;
+var support = supprot;
+var forum = forum;
+var web = website;
+var dev = developer;
+
+/////////////////////////////////////////////////////////////////
+
 client.on("message", (message) => {
-    if (message.content.startsWith(prefix + "ip")) {
+    if (message.content.startsWith(prefix + ip)) {
         message.channel.send({embed: {
             color: 3066993,
             author: {
@@ -33,14 +42,14 @@ client.on("message", (message) => {
         // image: {
         //     url :"",
         // },
-        // footer: {
-        //     icon_url: "PUT HERE YOU BANNER",
-        //     text: "Cuscusero#0001"
-        // }
+        footer: {
+            icon_url: "",
+            text: "Cuscusero#0001"
+        }
         }
     });
     } else
-    if (message.content.startsWith(prefix + "support")) {
+    if (message.content.startsWith(prefix + support)) {
         message.channel.send({embed: {
         color: 3447003,
         author: {
@@ -58,47 +67,47 @@ client.on("message", (message) => {
                 name: "Write in a chat:",
                 value: "`-new_ticket`"
             }
-    ],
-        // image: {
-        //     url :"",
-        // },
-        // footer: {
-        //     icon_url: "PUT HERE YOU BANNER",
-        //     text: "Cuscusero#0001"
-        // }
-    }
-});
-} else
-if (message.content.startsWith(prefix + "forum")) {
-    message.channel.send({embed: {
-    color: 3447003,
-    author: {
-        name: "Cuscusero | GitHub",
-        icon_url: "https://avatars.githubusercontent.com/u/57831875?s=400&u=8eba9c155a4d7180e085b065e2ecce0682f2f42e&v=4"
-    },
-    title: "Forum",
-    url: "https://github.com/cuscusero",
-    description: "Forum web \n ",
-    thumbnail: {
-        url: 'https://avatars.githubusercontent.com/u/57831875?s=400&u=8eba9c155a4d7180e085b065e2ecce0682f2f42e&v=4',
-    },
-    fields: [
-        {
-            name: "Join FORUM",
-            value: "[Click here](https://github.com/cuscusero)"
+        ],
+            // image: {
+                //     url :"",
+            // },
+            footer: {
+                icon_url: "",
+                text: "Cuscusero#0001"
+            }
         }
-    ],
-        // image: {
-        //     url :"",
-        // },
-        // footer: {
-        //     icon_url: "PUT HERE YOU BANNER",
-        //     text: "Cuscusero#0001"
-        // }
-    }
     });
     } else
-    if (message.content.startsWith(prefix + "website")) {
+    if (message.content.startsWith(prefix + forum)) {
+        message.channel.send({embed: {
+        color: 3447003,
+        author: {
+            name: "Cuscusero | GitHub",
+            icon_url: "https://avatars.githubusercontent.com/u/57831875?s=400&u=8eba9c155a4d7180e085b065e2ecce0682f2f42e&v=4"
+        },
+        title: "Forum",
+        url: "https://github.com/cuscusero",
+        description: "Forum web \n ",
+        thumbnail: {
+            url: 'https://avatars.githubusercontent.com/u/57831875?s=400&u=8eba9c155a4d7180e085b065e2ecce0682f2f42e&v=4',
+        },
+        fields: [
+            {
+                name: "Join FORUM",
+                value: "[Click here](https://github.com/cuscusero)"
+            }
+        ],
+            // image: {
+                //     url :"",
+            // },
+            footer: {
+                icon_url: "",
+                text: "Cuscusero#0001"
+            }
+        }
+    });
+    } else
+    if (message.content.startsWith(prefix + web)) {
         message.channel.send({embed: {
         color: 3447003,
         author: {
@@ -120,14 +129,14 @@ if (message.content.startsWith(prefix + "forum")) {
             // image: {
             //     url :"",
             // },
-            // footer: {
-            //     icon_url: "PUT HERE YOU BANNER",
-            //     text: "Cuscusero#0001"
-            // }
+            footer: {
+                icon_url: "",
+                text: "Cuscusero#0001"
+            }
         }
         });
     } else
-    if (message.content.startsWith(prefix + "developer")) {
+    if (message.content.startsWith(prefix + dev)) {
         message.channel.send({embed: {
         color: 3447003,
         author: {
@@ -149,10 +158,10 @@ if (message.content.startsWith(prefix + "forum")) {
             // image: {
             //     url :"",
             // },
-            // footer: {
-            //     icon_url: "PUT HERE YOU BANNER",
-            //     text: "Cuscusero#0001"
-            // }
+            footer: {
+                icon_url: "",
+                text: "Cuscusero#0001"
+            }
         }
         });
     }
