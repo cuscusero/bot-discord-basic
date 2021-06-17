@@ -1,4 +1,10 @@
 {
     "token":"PUT HERE YOUR TOKEN BOT",
-    "prefix":"PUT HERE YOUR PREFIX"
+    "prefix":"PUT HERE YOUR PREFIX",
+
+
+    "IconImage":"https://avatars.githubusercontent.com/u/57831875?s=400&u=8eba9c155a4d7180e085b065e2ecce0682f2f42e&v=4",
+    "BigImage":"https://i.imgur.com/4OF6NOz.png",
+    "DISCORDorWEBSITE": "https://github.com/cuscusero",
+    "StatusBOT":"-developer | Cuscusero#0001 | GitHub"
 }
