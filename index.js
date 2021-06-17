@@ -3,18 +3,18 @@ const client = new Discord.Client();
 const config = require("./configs/config.json");
 
 client.on("ready", () => {
-    client.user.setActivity("-developer | Cuscusero#0001 | GitHub"),
+    client.user.setActivity(config.StatusBOT),
     console.log("I am ready | Cuscusero#0001 | Thank you for downloading my code")
 })
 
 var prefix = config.prefix;
 
 // Commands
-var ip = ip;
-var support = supprot;
-var forum = forum;
-var web = website;
-var dev = developer;
+var ip = "ip";
+var support = "support";
+var forum = "forum";
+var web = "website";
+var dev = "developer";
 
 /////////////////////////////////////////////////////////////////
 
@@ -24,13 +24,13 @@ client.on("message", (message) => {
             color: 3066993,
             author: {
                 name: "Cuscusero | GitHub",
-                icon_url: "https://avatars.githubusercontent.com/u/57831875?s=400&u=8eba9c155a4d7180e085b065e2ecce0682f2f42e&v=4"
+                icon_url: config.IconImage
             },
             title: "IP",
-            url: "https://github.com/cuscusero",
+            url: config.DISCORDorWEBSITE,
             description: "IP server",
             thumbnail: {
-                url: 'https://avatars.githubusercontent.com/u/57831875?s=400&u=8eba9c155a4d7180e085b065e2ecce0682f2f42e&v=4',
+                url: config.BigImage,
             },
             fields: [
             {
@@ -54,13 +54,13 @@ client.on("message", (message) => {
         color: 3447003,
         author: {
             name: "Cuscusero | GitHub",
-            icon_url: "https://avatars.githubusercontent.com/u/57831875?s=400&u=8eba9c155a4d7180e085b065e2ecce0682f2f42e&v=4"
+            icon_url: config.IconImage
         },
         title: "Support",
-        url: "https://github.com/cuscusero",
+        url: config.DISCORDorWEBSITE,
         description: "Support \n ",
         thumbnail: {
-            url: 'https://avatars.githubusercontent.com/u/57831875?s=400&u=8eba9c155a4d7180e085b065e2ecce0682f2f42e&v=4',
+            url: config.BigImage,
         },
         fields: [
             {
@@ -83,13 +83,13 @@ client.on("message", (message) => {
         color: 3447003,
         author: {
             name: "Cuscusero | GitHub",
-            icon_url: "https://avatars.githubusercontent.com/u/57831875?s=400&u=8eba9c155a4d7180e085b065e2ecce0682f2f42e&v=4"
+            icon_url: config.IconImage
         },
         title: "Forum",
-        url: "https://github.com/cuscusero",
+        url: config.DISCORDorWEBSITE,
         description: "Forum web \n ",
         thumbnail: {
-            url: 'https://avatars.githubusercontent.com/u/57831875?s=400&u=8eba9c155a4d7180e085b065e2ecce0682f2f42e&v=4',
+            url: config.BigImage,
         },
         fields: [
             {
@@ -112,13 +112,13 @@ client.on("message", (message) => {
         color: 3447003,
         author: {
             name: "Cuscusero | GitHub",
-            icon_url: "https://avatars.githubusercontent.com/u/57831875?s=400&u=8eba9c155a4d7180e085b065e2ecce0682f2f42e&v=4"
+            icon_url: config.IconImage
         },
         title: "Website",
-        url: "https://github.com/cuscusero",
+        url: config.DISCORDorWEBSITE,
         description: "WebSite \n ",
         thumbnail: {
-            url: 'https://avatars.githubusercontent.com/u/57831875?s=400&u=8eba9c155a4d7180e085b065e2ecce0682f2f42e&v=4',
+            url: config.BigImage,
         },
         fields: [
             {
@@ -141,13 +141,13 @@ client.on("message", (message) => {
         color: 3447003,
         author: {
             name: "Cuscusero | GitHub",
-            icon_url: "https://avatars.githubusercontent.com/u/57831875?s=400&u=8eba9c155a4d7180e085b065e2ecce0682f2f42e&v=4"
+            icon_url: config.IconImage
         },
         title: "Developer",
-        url: "https://github.com/cuscusero",
+        url: config.DISCORDorWEBSITE,
         description: "Developer \n ",
         thumbnail: {
-            url: 'https://avatars.githubusercontent.com/u/57831875?s=400&u=8eba9c155a4d7180e085b065e2ecce0682f2f42e&v=4',
+            url: config.BigImage,
         },
         fields: [
             {
